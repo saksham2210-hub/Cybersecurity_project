@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codebase Secret Scanner</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f9; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+        input[type="file"] { margin: 1rem 0; width: 100%; }
+        button { background: #007bff; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; width: 100%; }
+        button:hover { background: #0056b3; }
+        #response { margin-top: 1rem; font-size: 0.9rem; color: #333; white-space: pre-wrap; text-align: left; overflow-y: auto; max-height: 200px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Secret Scanner</h2>
+        <form id="uploadForm">
+            <input type="file" id="zipFile" accept=".zip" required>
+            <button type="submit">Upload & Scan</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
